@@ -430,8 +430,7 @@ Medical-Pharmacy-Assistant/
 │   └── config.py
 │
 ├── app/
-│   ├── app.py
-│   └── ui.py
+│   └── app.py
 │
 ├── evaluation/
 │   ├── retrieval_evaluation.py
