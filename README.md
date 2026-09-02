@@ -420,16 +420,15 @@ Medical-Pharmacy-Assistant/
 │   └── retrieval.ipynb
 │
 ├── src/
-│   ├── data_processing.py
+│   ├── data_loader.py
+│   ├── cleaning.py
 │   ├── chunking.py
 │   ├── embedding.py
-│   ├── chroma_db.py
 │   ├── retriever.py
 │   └── rag.py
 │
-├── requirements.txt
 ├── README.md
-└── .gitignore
+
 ```
 
 > The exact project structure may evolve as the remaining RAG and application stages are implemented.
