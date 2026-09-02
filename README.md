@@ -401,7 +401,7 @@ Medical-Pharmacy-Assistant/
 │   ├── raw/
 │   │   ├── drug-label-0001-of-0014.json
 │   │   ├── drug-label-0002-of-0014.json
-│   │   └── drug-label-0003-of-0014.json
+│   │   └── ...
 │   │
 │   └── processed/
 │       └── medical_documents.jsonl
@@ -420,14 +420,27 @@ Medical-Pharmacy-Assistant/
 │   └── retrieval.ipynb
 │
 ├── src/
+│   ├── __init__.py
 │   ├── data_loader.py
 │   ├── cleaning.py
 │   ├── chunking.py
 │   ├── embedding.py
 │   ├── retriever.py
-│   └── rag.py
+│   ├── rag.py
+│   └── config.py
 │
-├── README.md
+├── app/
+│   ├── app.py
+│   └── ui.py
+│
+├── evaluation/
+│   ├── retrieval_evaluation.py
+│   └── rag_evaluation.py
+│
+├── tests/
+│   └── test_retrieval.py
+
+└── README.md
 
 ```
 
