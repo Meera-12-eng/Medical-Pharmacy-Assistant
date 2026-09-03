@@ -45,41 +45,23 @@ The project aims to:
 
 ---
 
-# 🔄 Final RAG Pipeline
+# Project Resources
 
-The current system combines retrieval, reranking, relevance checking, context construction, and LLM generation.
+This Google Drive folder contains all project resources for the Medical Pharmacy Assistant, including:
 
-```text
-User Question
-      ↓
-Query Rewriting (if conversation memory exists)
-      ↓
-retrieve_chunks()
-      ↓
-Hybrid Search
-      ↓
-Top ~20 Candidates
-      ↓
-Cohere Rerank
-      ↓
-Relevance Check
-      ↓
- ┌───────────────┴───────────────┐
- ↓                               ↓
-Irrelevant                    Relevant
- ↓                               ↓
-"I don't know"              Top-K Results
-                                  ↓
-                            Build Context
-                                  ↓
-                         Strict Medical Prompt
-                                  ↓
-                         Gemini 2.5 Flash
-                                  ↓
-                         Answer + Citations
-```
+Raw and processed data
+Extracted and processed chunks
+Notebooks
+Outputs
+Documentation
+Project-related files and resources
 
-The RAG generation layer was built on top of the existing `retrieve_chunks()` function from the retrieval stage.
+## Google Drive
+https://drive.google.com/drive/folders/1tSilVVJ7x-w_5_58cSsFInJSzCZ-KeUd
+
+Access the complete project files on Google Drive
+
+The large project files are hosted on Google Drive to avoid GitHub file-size limitations.
 
 ---
 
